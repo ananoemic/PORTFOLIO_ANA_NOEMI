@@ -8,12 +8,20 @@
 }
 body{
     font-family:'Roboto Mono', monospace;
+    min-width: 280px;
 }
 
 /* encabezado */
 header{
     display: flex;
     justify-content: space-between;
+    padding: 15px;
+}
+header img{
+    padding: 0;
+    margin: 0;
+    width: 6em;
+    height: 6em;
 }
 
 /* nav bar */
@@ -23,13 +31,13 @@ header{
 }
 
 .nav ul li {
-    margin: 10px;
+    padding: 15px;
 }
 
 .nav ul li a{
     text-decoration: none;
     color: #000;
-    font-family: 100;
+    font-weight: 600;
 }
 
 .banner{
@@ -37,13 +45,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
+
+
 
 .title{
     font-size: 3em;
     font-weight: 500;
     font-family: 'La Belle Aurore', cursive;
+
 }
 
 .resume{
@@ -66,13 +77,166 @@ header{
 }
 
 .btn-primary:hover{
-    background-color: yellow;
+    background-color: greenyellow;
     color: #000;
     font-weight: bold;
 }
 
 .img-profile{
-    width: 350px;
-    height: 450px;
+    width: 400px;
+    height: 440px;
     border-radius: 50%;
 }
+
+    /* section works */
+.section-works{
+    max-width: 800px;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+}
+
+.card div img{
+    width: 200px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 5px;
+    border: solid 2px;
+    box-shadow: 0 15px 25px;
+    box-shadow: #ff6464;
+}
+
+.text-works{
+    font-size: 1em;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.container-detail{
+    margin-left:30px;
+}
+
+.container-detail p{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.label-dark{
+    background-color: #142850;
+    color: #fff;
+    border-radius: 16px;
+    padding: 5px 16px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.text-light{
+    color: #8695a4;
+}
+
+hr{
+    height: 0.5px;
+    background-color: #ff6464;
+    border: 0.5px solid #ff6464;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.link-portafolio{
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link-portafolio:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    font-size: 7px;
+}
+
+
+
+
+@media only screen and (min-width: 760px) and (max-width: 1100px)  {
+
+    .title{
+    font-size: 2em;
+    }
+
+    .img-profile{
+        width: 300px;
+        height: 340px;
+        border-radius: 50%;
+    }
+
+ }
+
+ @media only screen and (min-width: 320px) and (max-width: 760px) {
+
+    .banner{
+        height: 50vh;
+        display: flex;
+        flex-direction:column-reverse;
+        padding-top: 6rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-profile{
+        width: 300px;
+        height:340px;
+        border-radius: 50%;
+    }
+    
+
+    .title{
+        font-size: 1.5em;
+        }
+
+    .card{
+        font-size: .8em;
+        padding-left: 15px;
+        margin: 15px;
+    }
+
+    .card div img{
+        width: 150px;
+        height: 120px;
+    }
+
+    .section-works{
+        max-width: 800px;
+        margin-top: 60px;
+    }
+
+    .text-works{
+        margin-bottom: 40px;
+        padding: 15px;
+    }
+
+    .resume{
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .btn-primary{
+        padding: 10px;
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+ }
