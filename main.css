@@ -96,6 +96,8 @@ header img{
 
 .card{
     display: flex;
+    margin: 25px;
+    flex-direction: row;
 }
 
 .card div img{
@@ -207,7 +209,7 @@ hr{
     .card{
         font-size: .8em;
         padding-left: 15px;
-        margin: 15px;
+        margin: 25px;
     }
 
     .card div img{
